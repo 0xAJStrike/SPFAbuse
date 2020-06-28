@@ -28,22 +28,23 @@ if __name__ == "__main__":
 	
 	personalizations = {}
 	personalizations["to"] = []
-	to = {"email": sys.argv[2]}
+	to = {"email": sys.argv[3]}
 	personalizations["to"].append(to)
-	personalizations["subject"] = sys.argv[3]
+	personalizations["subject"] = sys.argv[4]
 	body["personalizations"].append(personalizations)
 	
 	body["from"] = {}
-	body["from"]["email"] = sys.argv[1]
+	body["from"]["email"] = sys.argv[2]
+	body["from"]["name"] = sys.argv[1]
 	
 	body["content"] = []
 	content = {}
 	content["type"] = "text/html";
-	content["value"] = open(sys.argv[4]).read()
+	content["value"] = open(sys.argv[5]).read()
 	body["content"].append(content)
 	
 	body = json.dumps(body)
 	
-	apikey = sys.argv[5]
+	apikey = sys.argv[6]
 		
-	send_api_request(apikey, body, sys.argv[2])
+	send_api_request(apikey, body, sys.argv[3])
