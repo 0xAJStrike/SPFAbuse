@@ -13,7 +13,7 @@ You need to register a free account on sendgrid to be able to send emails.
 python3 SPFAbuse.py 
 SPF Abuse - Mr.Un1k0d3r RingZer0 Team
 
-Usage: SPFAbuse.py from to subject pathtofile apikey
+Usage: SPFAbuse.py fromname from to subject pathtofile apikey
 ```
 
 # Credit
