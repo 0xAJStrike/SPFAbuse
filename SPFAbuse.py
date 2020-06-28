@@ -20,7 +20,7 @@ if __name__ == "__main__":
 	print("SPF Abuse - Mr.Un1k0d3r RingZer0 Team\n")
 	
 	if len(sys.argv) < 6:
-		print("Usage: %s from to subject pathtofile apikey" % sys.argv[0])
+		print("Usage: %s FromName fromEmailID toEmailID subject pathtofile apikey" % sys.argv[0])
 		sys.exit(0)
 		
 	body = {}
