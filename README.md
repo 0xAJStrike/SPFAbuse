@@ -1,4 +1,6 @@
 # SPFAbuse
+Forked version to include the From name field to provide additional legtimacy to the email :) 
+
 SPF are not as strong as you may think. Red Team tool to send email on behalf of your target corp. The email format is expected to be `text/html`
 
 Moral of the story make sure that DMARC is enforced :)
